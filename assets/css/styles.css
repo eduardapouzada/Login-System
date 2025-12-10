@@ -6,7 +6,7 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#interface{
+.interface{
     display: flex;
     background-image: linear-gradient(#6366F1, #A5B4FC, #6366F1 );
     width: 100vw; height: 100vh;
@@ -19,9 +19,18 @@ html, body {
 }
 
 .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #F3F4F6;
     text-align: center;
     font-size: 24pt;
+    font-weight: 700;
+}
+
+.title img{
+    width: 40px; height: 35px;
+    margin: 0 3px;
 }
 
 .area-login{
@@ -64,5 +73,93 @@ html, body {
     color: #555454;
     font-weight: 600;
     font-size: 10pt;
-    margin: 15px 0 3px 0;
+    margin: 20px 0 3px 0;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+  margin: 10px 0 15px 0;
+  font-size: 10pt;
+  color: #555454;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #a9a9a9;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+}
+
+.checkbox input:checked + span {
+  background: #ee964b;
+  border-color: #ee964b;
+}
+
+.checkbox input:checked + span::after {
+  content: "✔";
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+
+.area-dados a{
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+.area-dados a:hover{
+    text-decoration: underline;
+}
+
+.area-dados .button-login{
+    background-color: #6366F1;
+    border: none;
+    border-radius: 6px;   
+    width: 100%; height: 40px;
+    margin: 18px auto;
+    padding: 10px;
+    color: white;
+    font-size: 10pt;
+    font-weight: 700;
+}
+
+.area-dados .cadastro{
+    font-weight: normal;
+    text-align: center;
+    font-size: 10pt;
+}
+
+.area-dados .cadastro a{
+    font-size: 10pt;
+}
+
+
+.google-btn { 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #555454;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.google-btn img {
+    width: 20px;
+    height: 20px;
 }

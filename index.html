@@ -4,24 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Login System</title>
+    <link rel="shortcut icon" href="/assets/imgs/logo-icon.png" type="image/x-icon">
+    <title>Connectly</title>
 </head>
 <body>
-    <div id="interface">
+    <div class="interface">
         <div class="login">
-            <h1 class="title">Connectly</h1>
+            <div class="title">
+                <img src="./assets/imgs/C.png" alt="">
+                Connectly
+            </div>
             <div class="area-login">
                 <p class="texts welcome">Bem Vindo de volta!</p>
                 <p class="texts">Insira seus dados para acessar sua conta</p>
 
-                <div class="area-dados">
+                <form class="area-dados">
                     <p>Email: </p>
-                    <input type="email" placeholder="Seu Email">
+                    <input type="email" class="email" placeholder="Seu Email">
                     <p>Senha: </p>
-                    <input type="password" placeholder="Sua Senha">
-                </div>
+                    <input type="password" class="password" placeholder="Sua Senha">
+                    
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span></span>
+                        Lembre-se de mim
+                    </label>
+
+                    <a href="">Esqueceu sua Senha?</a>
+
+                    <button type="submit" class="button-login">ENTRAR</button>
+
+                    <!--Botao obrigatorio do google
+                    <div id="g_id_onload"
+                        data-client_id="SEU_CLIENT_ID"
+                        data-login_uri="http://localhost:3000/login"></div>
+                    <div class="g_id_signin"
+                        data-type="standard"
+                        data-size="large"
+                        data-text="continue_with"
+                        data-shape="rectangular"
+                        data-theme="outline"></div>
+                    <script src="https://accounts.google.com/gsi/client" async></script>
+                    -->
+
+                    <button class="google-btn">
+                        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="">
+                        Continuar com o Google
+                    </button>
+
+                    <p class="cadastro">Não tem uma conta? <a href="/pages/cadastro.html">Cadastre-se</a></p>
+                </form>
             </div>
         </div>
     </div>
 </body>
+    <script src="/assets/js/script.js"></script>
 </html>
